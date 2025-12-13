@@ -7,6 +7,12 @@
 **Primary Technologies**: Python, Azure AI Foundry, Azure Container Apps, Azure AI Search, Application Insights  
 **Repository**: https://github.com/Azure-Samples/get-started-with-ai-agents
 
+### Enterprise Custom Agents Setup
+- This solution uses GitHub Enterprise custom agents centrally.
+- Central path: AICraftWorksOrg/.github-private → `.github/agents` (org discovery).
+- Repo `.github/agents` folders are auto-synced from `.github-private/agents` and are read-only.
+- Update agents in `.github-private/agents`; CI mirrors to all repos.
+
 ### Solution Overview
 
 Web-based chat application with an AI agent running in Azure Container App, leveraging:
